@@ -5,10 +5,11 @@ require "bundler/setup"
 require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
-set :database, "sqlite3:barbershop.db"
+set :database, {adapter: "sqlite3", database: "foo.sqlite3"}
+#set :database, "sqlite3:barbershop.db"
 
 class Client < ActiveRecord::Base
-
+  
 end
 
 
