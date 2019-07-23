@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fac2148e-6db8-49e3-88f5-760f7e227003" name="Default Changelist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sinatra-bootstrap-clean.iml" afterPath="$PROJECT_DIR$/.idea/sinatra-bootstrap-clean.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20190719082251_create_clients.rb" afterPath="$PROJECT_DIR$/db/migrate/20190719082251_create_clients.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,8 +36,18 @@
       <file leaf-file-name="app.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -58,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20190723084929_create_barbers.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="20190723084929_create_barbers.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20190723084929_create_barbers.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -95,8 +100,9 @@
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20190719082251_create_clients.rb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190723084929_create_barbers.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/views/index.erb" />
       </list>
     </option>
   </component>
@@ -158,13 +164,7 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="BarberShopHQ" type="cbb8eebc:String" user="BarberShopHQ" />
-              <item name="db" type="cbb8eebc:String" user="db" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="BarberShopHQ" type="cbb8eebc:String" user="BarberShopHQ" />
-              <item name="db" type="cbb8eebc:String" user="db" />
-              <item name="migrate" type="cbb8eebc:String" user="migrate" />
+              <item name="views" type="cbb8eebc:String" user="views" />
             </path>
           </expand>
           <select />
@@ -242,12 +242,12 @@
       <workItem from="1563864979622" duration="262000" />
       <workItem from="1563867651476" duration="154000" />
       <workItem from="1563868072035" duration="748000" />
-      <workItem from="1563868877440" duration="3957000" />
+      <workItem from="1563868877440" duration="4822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16975000" />
+    <option name="totallyTimeSpent" value="17840000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -295,14 +295,6 @@
     <SUITE FILE_PATH="coverage/sinatra_bootstrap_clean@app.rcov" NAME="app Coverage Results" MODIFIED="1562078626408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sinatra-bootstrap-clean" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -650,14 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -678,6 +662,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
           <folding />
         </state>
       </provider>
