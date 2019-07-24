@@ -7,18 +7,45 @@ set :database, {adapter: "sqlite3", database: "barbershop.db"}
 
 #set :database, "sqlite3:barbershop.db"
 
-class Client < ActiveRecord::Base
-  validates :name, presence: true, length: { minimum: 3 }
-  validates :phone, presence: true
-  validates :datestamp, presence: true
-  validates :color, presence: true
+class Clients < ActiveRecord::Base
+
 end
 
 class Barber < ActiveRecord::Base
 
 end
 
-get '/' do
+class Contacts < ActiveRecord::Base
+
+end
+
+before do
   @barbers = Barber.all
+end
+
+get '/' do
 	erb :index
+end
+
+get '/visit' do
+  erb :visit
+end
+
+post '/visit' do
+
+  @name = params[:name]
+  @phone = params[:phone]
+  @datestamp = params[:datestamp]
+  @barber = params[:barber]
+
+  c = Clients.new
+  c.name = @name
+  c.phone = @phone
+  c.datestamp = @datestamp
+  c.barber = @barber
+  c.save
+
+  @congrat = " Спасибо что пользуетесь нашими услугами!"
+
+  erb :visit
 end
