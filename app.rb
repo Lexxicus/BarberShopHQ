@@ -32,20 +32,8 @@ get '/visit' do
 end
 
 post '/visit' do
-
-  @name = params[:name]
-  @phone = params[:phone]
-  @datestamp = params[:datestamp]
-  @barber = params[:barber]
-
-  c = Clients.new
-  c.name = @name
-  c.phone = @phone
-  c.datestamp = @datestamp
-  c.barber = @barber
+  c = Clients.new params[:client]
   c.save
-
   @congrat = " Спасибо что пользуетесь нашими услугами!"
-
   erb :visit
 end
