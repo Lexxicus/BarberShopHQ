@@ -8,7 +8,7 @@ set :database, {adapter: "sqlite3", database: "barbershop.db"}
 #set :database, "sqlite3:barbershop.db"
 
 class Clients < ActiveRecord::Base
-  validates :name, presence: true
+  validates :name, presence: true, length: {minimum:  3}
   validates :phone, presence: true
   validates :barber, presence: true
   validates :datestamp, presence: true
@@ -32,13 +32,18 @@ get '/' do
 end
 
 get '/visit' do
+  @c = Clients.new
   erb :visit
 end
 
 post '/visit' do
-  c = Clients.new params[:client]
-  c.save
-  @article = c.errors.full_messages
-  @congrat = "<h4> Спасибо что пользуетесь нашими услугами! </h4>"
+  @c = Clients.new params[:client]
+  if @c.save
+    @congrat = "<h4> Спасибо что пользуетесь нашими услугами! </h4>"
+  else
+    @error = @c.errors.full_messages.first
+  end
+  
+
   erb :visit
 end
