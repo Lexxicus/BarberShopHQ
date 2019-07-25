@@ -57,5 +57,6 @@ get '/booking' do
 end
 
 get '/client/:id' do
-  erb 'This is Client page stub'
+  @client = Clients.find params[:id]
+  erb :client
 end
