@@ -1,6 +1,6 @@
 <h2>Список наших парикмахеров</h2>
-<ul>
   <% @barbers.each do |barber| %>
-      <li><%= barber.name %></li>
+    <p>
+      <a href="/barber/<%= barber.id %>"><%= barber.name %></a>
+    </p>
   <% end %>
-</ul>
