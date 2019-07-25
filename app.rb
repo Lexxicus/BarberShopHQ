@@ -38,7 +38,7 @@ end
 post '/visit' do
   c = Clients.new params[:client]
   c.save
-  @article = c.errors.messages
+  @article = c.errors.full_messages
   @congrat = "<h4> Спасибо что пользуетесь нашими услугами! </h4>"
   erb :visit
 end

@@ -13,8 +13,12 @@
 <% if @article %>
     <div>
       <ul>
+        <% i = 1 %>
         <% @article.each do |msg| %>
-            <li><%= msg %></li>
+            <% if i == 1 %>
+              <li><%= msg %></li>
+              <% i+=1 %>
+            <% end %>
         <% end %>
       </ul>
     </div>
