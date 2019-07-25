@@ -47,6 +47,15 @@ post '/visit' do
 end
 
 get '/barber/:id' do
-  @barber = Barber.find(params[:id])
+  @barber = Barber.find params[:id]
   erb :barber
+end
+
+get '/booking' do
+  @clients = Clients.order 'created_at DESC'
+  erb :booking
+end
+
+get '/client/:id' do
+  erb 'This is Client page stub'
 end
