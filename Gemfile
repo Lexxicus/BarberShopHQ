@@ -2,12 +2,11 @@
 
 source 'https://rubygems.org'
 
-gem 'activerecord'
-gem 'sinatra'
+gem 'activerecord', '~> 7.0.0'
+gem 'sinatra', '~> 3.0'
 gem 'sinatra-activerecord'
 gem 'sinatra-contrib'
-gem 'sqlite3'
-
-#group :development do
-#  gem 'tux'
-#end
+gem 'sqlite3', '~> 1.6'
+gem 'rake'
+gem 'puma'
+gem 'webrick'
