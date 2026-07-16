@@ -1,0 +1,19 @@
+<h2>Свяжитесь с нами</h2>
+
+<% if @congrat && @congrat.length > 1 %>
+  <%= @congrat %>
+<% end %>
+
+<form action="/contacts" method="POST" role="form">
+  <div class="form-group">
+    <label>Ваш email</label>
+    <input name="contact[email]" type="email" class="form-control" placeholder="email@example.com" value="<%= @contact.email %>">
+  </div>
+
+  <div class="form-group">
+    <label>Сообщение</label>
+    <textarea name="contact[message]" class="form-control" rows="5" placeholder="Ваше сообщение"><%= @contact.message %></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-danger">Отправить</button>
+</form>
